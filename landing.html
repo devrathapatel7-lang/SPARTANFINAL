@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free 12-Point Roof Inspection — Spartan Roofing | Central NJ</title>
+  <meta name="description" content="Get a free, no-pressure 12-point roof inspection from Spartan Roofing. GAF Certified, Owens Corning Preferred, 5.0 stars from 139 Google reviews. Same-day inspections across Central New Jersey." />
+  <meta name="keywords" content="free roof inspection NJ, 12 point roof inspection, GAF certified roofer, Owens Corning roofer Central NJ, Spartan Roofing inspection" />
+
+  <!-- Open Graph / social share -->
+  <meta property="og:title" content="Free 12-Point Roof Inspection — Spartan Roofing" />
+  <meta property="og:description" content="GAF Certified. Owens Corning Preferred. 139 five-star Google reviews. Free, no-pressure inspection within 24 hours." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ============================================================
+       LANDING-PAGE-ONLY STYLES
+       ============================================================ */
+    .lp-body { background: var(--cream); }
+
+    /* Minimal header — no nav distraction, just logo + phone */
+    .lp-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--black);
+      color: var(--cream);
+      border-bottom: 1px solid rgba(245,241,234,0.08);
+    }
+    .lp-header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .lp-header .logo-link { gap: 0.875rem; }
+    .lp-header .logo-link img { height: 52px; width: auto; }
+    .lp-header .logo-text-roofing { color: var(--cream); }
+    .lp-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--cream);
+      font-family: var(--f-body);
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .lp-phone svg { color: var(--red); }
+    @media (max-width: 480px) {
+      .lp-header-inner { padding: 0.6rem 1rem; }
+      .lp-header .logo-link img { height: 40px; }
+      .lp-header .logo-text-spartan { font-size: 0.95rem; }
+      .lp-header .logo-text-roofing { font-size: 0.55rem; letter-spacing: 0.2em; }
+      .lp-phone { font-size: 0.85rem; }
+    }
+
+    /* Hero */
+    .lp-hero {
+      background-color: #0A0908;
+      color: var(--cream);
+      padding: 4rem 1.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .lp-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(180deg, rgba(10,9,8,0.85) 0%, rgba(10,9,8,0.92) 60%, rgba(10,9,8,0.98) 100%),
+        url('images/photo-22.jpg');
+      background-size: cover;
+      background-position: center;
+      pointer-events: none;
+    }
+    .lp-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 30% 20%, rgba(200,16,46,0.18), transparent 55%);
+      pointer-events: none;
+    }
+    .lp-hero-inner {
+      max-width: 64rem;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .lp-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--f-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 1.5rem;
+    }
+    .lp-hero-eyebrow::before, .lp-hero-eyebrow::after {
+      content: '';
+      width: 2rem;
+      height: 1px;
+      background: var(--red);
+    }
+    .lp-hero h1 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(2.75rem, 8.5vw, 6.25rem);
+      line-height: 1;
+      letter-spacing: -0.015em;
+      margin: 0 0 1.75rem;
+      color: var(--cream);
+      font-variation-settings: '"opsz" 144';
+    }
+    .lp-hero h1 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--red);
+    }
+    .lp-hero-sub {
+      font-family: var(--f-body);
+      font-weight: 300;
+      font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+      line-height: 1.6;
+      color: rgba(245,241,234,0.85);
+      max-width: 44rem;
+      margin: 0 auto 2.5rem;
+    }
+
+    /* YouTube video container — responsive 16:9 */
+    .lp-video {
+      max-width: 56rem;
+      margin: 0 auto 2.5rem;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      background: #000;
+      position: relative;
+      aspect-ratio: 16 / 9;
+    }
+    .lp-video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Big primary CTA */
+    .lp-cta-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--red);
+      color: var(--cream);
+      font-family: var(--f-body);
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 1.15rem 2.25rem;
+      text-decoration: none;
+      border: 0;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      letter-spacing: 0.01em;
+    }
+    .lp-cta-primary:hover {
+      background: #E63946;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(200,16,46,0.4);
+    }
+    .lp-cta-primary svg { transition: transform 0.2s ease; }
+    .lp-cta-primary:hover svg { transform: translateX(4px); }
+
+    /* Hero trust micro-row */
+    .lp-trust-row {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem 2rem;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--f-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,241,234,0.65);
+    }
+    .lp-trust-row strong { color: var(--cream); font-weight: 600; }
+    .lp-trust-row .star { color: #FFC83D; }
+
+    /* What's included section */
+    .lp-section {
+      padding: 5rem 1.5rem;
+    }
+    .lp-section-light { background: var(--cream); color: var(--black); }
+    .lp-section-dark { background: var(--black); color: var(--cream); }
+    .lp-section-inner { max-width: 64rem; margin: 0 auto; }
+    .lp-section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .lp-section-title .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 1.25rem;
+    }
+    .lp-section-title .eyebrow::before, .lp-section-title .eyebrow::after {
+      content: '';
+      width: 2rem;
+      height: 1px;
+      background: var(--red);
+    }
+    .lp-section-title h2 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.05;
+      margin: 0;
+      font-variation-settings: '"opsz" 144';
+    }
+    .lp-section-title h2 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--red);
+    }
+    .lp-section-title p {
+      font-family: var(--f-body);
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: var(--warm-gray);
+      max-width: 36rem;
+      margin: 1rem auto 0;
+      line-height: 1.6;
+    }
+    .lp-section-dark .lp-section-title p { color: rgba(245,241,234,0.7); }
+
+    .lp-risk-row {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 0.75rem;
+      margin-top: 1.5rem;
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+    }
+    .lp-risk-row .dot { color: var(--red); font-weight: 700; }
+    .lp-section-dark .lp-risk-row { color: rgba(245,241,234,0.7); }
+
+    /* 12-point grid */
+    .lp-points-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem 2rem;
+    }
+    .lp-point {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(10,9,8,0.08);
+    }
+    .lp-section-dark .lp-point { border-bottom-color: rgba(245,241,234,0.1); }
+    .lp-point-num {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--red);
+      color: var(--cream);
+      font-family: var(--f-mono);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .lp-point-text {
+      font-family: var(--f-body);
+      font-size: 1rem;
+      line-height: 1.45;
+      padding-top: 0.5rem;
+    }
+
+    /* Features (badges) */
+    .lp-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .lp-feature {
+      background: var(--charcoal);
+      padding: 1.5rem 1.25rem;
+      border-left: 3px solid var(--red);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .lp-feature-icon { color: var(--red); margin-bottom: 0.25rem; }
+    .lp-feature h3 {
+      font-family: var(--f-display);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0;
+      color: var(--cream);
+    }
+    .lp-feature p {
+      font-family: var(--f-body);
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: rgba(245,241,234,0.75);
+      margin: 0;
+    }
+
+    /* Form section */
+    .lp-form-section {
+      background: var(--paper);
+      padding: 5rem 1.5rem;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+    }
+    .lp-form-card {
+      max-width: 36rem;
+      margin: 2.5rem auto 0;
+      background: var(--cream);
+      padding: 2.5rem 2rem;
+      border: 1px solid var(--line-dark);
+      box-shadow: 0 12px 40px rgba(10,9,8,0.07);
+    }
+    .lp-form-card .form-row { margin-bottom: 1rem; }
+    .lp-form-card .form-row.split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 480px) {
+      .lp-form-card { padding: 1.75rem 1.25rem; }
+      .lp-form-card .form-row.split { grid-template-columns: 1fr; }
+    }
+    .lp-form-card label {
+      display: block;
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+      margin-bottom: 0.4rem;
+    }
+    .lp-form-card input,
+    .lp-form-card select,
+    .lp-form-card textarea {
+      width: 100%;
+      padding: 0.75rem 0.85rem;
+      border: 1px solid var(--line-dark);
+      background: #fff;
+      font-family: var(--f-body);
+      font-size: 1rem;
+      color: var(--black);
+      border-radius: 0;
+    }
+    .lp-form-card input:focus,
+    .lp-form-card select:focus,
+    .lp-form-card textarea:focus {
+      outline: 2px solid var(--red);
+      outline-offset: -1px;
+    }
+    .lp-submit {
+      width: 100%;
+      margin-top: 0.75rem;
+      padding: 1.1rem 1.5rem;
+      background: var(--red);
+      color: var(--cream);
+      font-family: var(--f-body);
+      font-weight: 600;
+      font-size: 1.05rem;
+      border: 0;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .lp-submit:hover { background: #E63946; transform: translateY(-1px); }
+    .lp-form-disclaimer {
+      text-align: center;
+      font-family: var(--f-body);
+      font-size: 0.8rem;
+      color: var(--warm-gray);
+      margin-top: 1rem;
+    }
+    .lp-form-success {
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    .lp-form-success svg { color: var(--red); margin-bottom: 1rem; }
+    .lp-form-success h3 {
+      font-family: var(--f-display);
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem;
+      color: var(--black);
+    }
+    .lp-form-success p {
+      font-family: var(--f-body);
+      color: var(--warm-gray);
+      margin: 0;
+    }
+
+    /* ============== GALLERY ============== */
+    .lp-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 640px) {
+      .lp-gallery { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    }
+    @media (min-width: 1024px) {
+      .lp-gallery { grid-template-columns: repeat(4, 1fr); }
+    }
+    .lp-gallery-item {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--charcoal);
+      border: 0;
+      padding: 0;
+      display: block;
+      width: 100%;
+    }
+    .lp-gallery-item .lp-gallery-img {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.6s ease-out;
+    }
+    .lp-gallery-item:hover .lp-gallery-img { transform: scale(1.08); }
+    .lp-gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(10,9,8,0.7) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .lp-gallery-item:hover::after { opacity: 1; }
+    .lp-gallery-zoom {
+      position: absolute;
+      bottom: 0.875rem;
+      right: 0.875rem;
+      width: 36px;
+      height: 36px;
+      background: var(--red);
+      color: var(--cream);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 2;
+    }
+    .lp-gallery-item:hover .lp-gallery-zoom {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============== LIGHTBOX ============== */
+    .lp-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(10,9,8,0.96);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1rem;
+      animation: lp-lb-fade 0.25s ease-out;
+    }
+    .lp-lightbox.open { display: flex; }
+    @keyframes lp-lb-fade {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .lp-lightbox-img {
+      max-width: 95vw;
+      max-height: 88vh;
+      object-fit: contain;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.7);
+      animation: lp-lb-zoom 0.3s ease-out;
+    }
+    @keyframes lp-lb-zoom {
+      from { transform: scale(0.95); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+    .lp-lightbox-close,
+    .lp-lightbox-prev,
+    .lp-lightbox-next {
+      position: absolute;
+      background: rgba(245,241,234,0.08);
+      color: var(--cream);
+      border: 1px solid rgba(245,241,234,0.18);
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+      z-index: 2;
+    }
+    .lp-lightbox-close:hover,
+    .lp-lightbox-prev:hover,
+    .lp-lightbox-next:hover {
+      background: var(--red);
+      border-color: var(--red);
+      transform: scale(1.05);
+    }
+    .lp-lightbox-close { top: 1.5rem; right: 1.5rem; }
+    .lp-lightbox-prev { left: 1.5rem; top: 50%; transform: translateY(-50%); }
+    .lp-lightbox-next { right: 1.5rem; top: 50%; transform: translateY(-50%); }
+    .lp-lightbox-prev:hover, .lp-lightbox-next:hover { transform: translateY(-50%) scale(1.05); }
+    .lp-lightbox-counter {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: rgba(245,241,234,0.7);
+      background: rgba(10,9,8,0.6);
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(245,241,234,0.12);
+    }
+    @media (max-width: 640px) {
+      .lp-lightbox-prev { left: 0.75rem; width: 40px; height: 40px; }
+      .lp-lightbox-next { right: 0.75rem; width: 40px; height: 40px; }
+      .lp-lightbox-close { top: 0.75rem; right: 0.75rem; width: 40px; height: 40px; }
+    }
+
+    /* Reviews mini section — simple 3-up */
+    .lp-reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .lp-review-card {
+      background: var(--cream);
+      padding: 1.75rem 1.5rem;
+      border: 1px solid var(--line-dark);
+    }
+    .lp-review-stars {
+      color: #FFC83D;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+    .lp-review-quote {
+      font-family: var(--f-body);
+      font-weight: 300;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+    }
+    .lp-review-author {
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+    }
+    .lp-review-author strong { color: var(--black); font-weight: 600; }
+
+    /* Final CTA */
+    .lp-final {
+      background: var(--black);
+      color: var(--cream);
+      padding: 5rem 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .lp-final::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 0%, rgba(200,16,46,0.12) 100%);
+      pointer-events: none;
+    }
+    .lp-final-inner { max-width: 48rem; margin: 0 auto; position: relative; z-index: 1; }
+    .lp-final h2 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.05;
+      margin: 0 0 1.25rem;
+    }
+    .lp-final h2 em { font-style: italic; font-weight: 300; color: var(--red); }
+    .lp-final p {
+      font-family: var(--f-body);
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: rgba(245,241,234,0.8);
+      margin: 0 0 2rem;
+    }
+    .lp-final-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.875rem;
+      justify-content: center;
+    }
+    .lp-final-buttons .lp-cta-primary { font-size: 1rem; }
+    .lp-final-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1.15rem 1.75rem;
+      border: 1px solid rgba(245,241,234,0.3);
+      color: var(--cream);
+      font-family: var(--f-body);
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .lp-final-call:hover { background: rgba(245,241,234,0.05); }
+
+    /* Footer */
+    .lp-footer {
+      background: #0A0908;
+      color: rgba(245,241,234,0.6);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-top: 1px solid rgba(245,241,234,0.08);
+    }
+    .lp-footer a { color: rgba(245,241,234,0.85); text-decoration: none; }
+    .lp-footer-line { margin-bottom: 0.5rem; }
+
+    @media (max-width: 767px) {
+      .lp-section { padding: 3.5rem 1.25rem; }
+      .lp-hero { padding: 3rem 1.25rem 4rem; }
+      .lp-trust-row { gap: 0.75rem 1.25rem; font-size: 0.65rem; }
+      .lp-cta-primary { width: 100%; justify-content: center; padding: 1rem 1.5rem; }
+      .lp-final-buttons { flex-direction: column; align-items: stretch; }
+      .lp-final-call { justify-content: center; }
+      .lp-form-section { padding: 3.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body class="lp-body">
+
+<!-- ============================================================ HEADER -->
+<header class="lp-header">
+  <div class="lp-header-inner">
+    <a href="index.html" class="logo-link" aria-label="Spartan Roofing — home">
+      <img src="images/logo.png" alt="Spartan Roofing" />
+      <span class="logo-text">
+        <span class="logo-text-spartan">Spartan</span>
+        <span class="logo-text-roofing">Roofing</span>
+      </span>
+    </a>
+    <a href="tel:973-938-2776" class="lp-phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      973-938-2776
+    </a>
+  </div>
+</header>
+
+<!-- ============================================================ HERO -->
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+    <div class="lp-hero-eyebrow">WATCH BEFORE YOU DECIDE · CENTRAL NJ</div>
+
+    <h1>
+      Don't Replace Your Roof<br />
+      <em>Until You Watch This.</em>
+    </h1>
+
+    <p class="lp-hero-sub">
+      Two minutes that could save you thousands. Then claim
+      your free 12-point inspection below.
+    </p>
+
+    <!-- ============================================================
+         YOUTUBE VIDEO EMBED
+         ------------------------------------------------------------
+         To swap the video:
+         1. Upload your 2-3 minute ad to YouTube as "Unlisted"
+         2. Open the video, copy the URL.
+         3. Find the video ID — it's the part after "v=":
+            e.g. https://www.youtube.com/watch?v=dQw4w9WgXcQ → ID is "dQw4w9WgXcQ"
+         4. Replace YOUR_VIDEO_ID_HERE below with that ID.
+         5. Save & redeploy.
+         ============================================================ -->
+    <div class="lp-video">
+      <iframe
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE?rel=0&modestbranding=1"
+        title="Spartan Roofing — Why You Should Get Your Free 12-Point Roof Inspection"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+    <a href="#book" class="lp-cta-primary">
+      Book My Free Inspection
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+
+    <div class="lp-trust-row">
+      <span><span class="star">★★★★★</span> <strong>5.0 · 139 Google Reviews</strong></span>
+      <span><strong>GAF Certified</strong></span>
+      <span><strong>Owens Corning Preferred</strong></span>
+      <span><strong>15+ Years Experience</strong></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ WHAT'S INCLUDED -->
+<section class="lp-section lp-section-light">
+  <div class="lp-section-inner">
+    <div class="lp-section-title">
+      <div class="eyebrow"><span></span>What You Get<span></span></div>
+      <h2>The Full <em>12-Point Inspection.</em></h2>
+      <p>A senior inspector (never a salesman) walks every inch of your roof and gives you a detailed photo report. Free. No obligation. Same-day appointments often available.</p>
+    </div>
+
+    <div class="lp-points-grid">
+      <div class="lp-point"><span class="lp-point-num">01</span><span class="lp-point-text">Shingle wear, cracking &amp; granule loss assessment</span></div>
+      <div class="lp-point"><span class="lp-point-num">02</span><span class="lp-point-text">Flashing inspection: chimneys, vents, skylights, walls</span></div>
+      <div class="lp-point"><span class="lp-point-num">03</span><span class="lp-point-text">Ridge cap &amp; valley condition</span></div>
+      <div class="lp-point"><span class="lp-point-num">04</span><span class="lp-point-text">Gutter &amp; downspout flow check</span></div>
+      <div class="lp-point"><span class="lp-point-num">05</span><span class="lp-point-text">Soffit &amp; fascia integrity</span></div>
+      <div class="lp-point"><span class="lp-point-num">06</span><span class="lp-point-text">Attic ventilation &amp; airflow analysis</span></div>
+      <div class="lp-point"><span class="lp-point-num">07</span><span class="lp-point-text">Roof decking &amp; structural integrity</span></div>
+      <div class="lp-point"><span class="lp-point-num">08</span><span class="lp-point-text">Ice dam vulnerability mapping</span></div>
+      <div class="lp-point"><span class="lp-point-num">09</span><span class="lp-point-text">Storm &amp; hail damage documentation</span></div>
+      <div class="lp-point"><span class="lp-point-num">10</span><span class="lp-point-text">Drainage &amp; water flow patterns</span></div>
+      <div class="lp-point"><span class="lp-point-num">11</span><span class="lp-point-text">Drone aerial inspection (when accessible)</span></div>
+      <div class="lp-point"><span class="lp-point-num">12</span><span class="lp-point-text">Detailed photo report &amp; honest recommendations</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FEATURES / WHY US -->
+<section class="lp-section lp-section-dark">
+  <div class="lp-section-inner">
+    <div class="lp-section-title">
+      <div class="eyebrow"><span></span>Why Spartan<span></span></div>
+      <h2>Why Central NJ Homeowners <em>Choose Us.</em></h2>
+      <p>We're not the cheapest. We're not the biggest. But when a homeowner wants the job done right the first time, they call us.</p>
+    </div>
+
+    <div class="lp-features">
+      <div class="lp-feature">
+        <span class="lp-feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
+        <h3>GAF Certified</h3>
+        <p>Factory-trained on the largest roofing manufacturer in North America. Eligible for GAF's enhanced warranty packages.</p>
+      </div>
+      <div class="lp-feature">
+        <span class="lp-feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Owens Corning Preferred</h3>
+        <p>Elite-tier OC contractor with access to the industry's strongest material warranties on Duration shingles.</p>
+      </div>
+      <div class="lp-feature">
+        <span class="lp-feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+        <h3>5.0 ★ · 139 Google Reviews</h3>
+        <p>Real homeowners. Real photos. Real reviews. Read every single one before you decide.</p>
+      </div>
+      <div class="lp-feature">
+        <span class="lp-feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <h3>15+ Years of Experience</h3>
+        <p>Family-owned and operated. Hundreds of NJ roofs replaced. The kind of work that lasts longer than the next storm.</p>
+      </div>
+      <div class="lp-feature">
+        <span class="lp-feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></span>
+        <h3>Licensed &amp; Insured</h3>
+        <p>NJ HIC license + full general liability + workers' comp. Your home and our crews are fully protected on every job.</p>
+      </div>
+      <div class="lp-feature">
+        <span class="lp-feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.326A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m9 20 3-3 3 3"/><path d="M13 17v5"/></svg></span>
+        <h3>24/7 Storm Response</h3>
+        <p>Active leak or storm damage? On-site within 2 hours with tarps, documentation, and direct insurance support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ GALLERY -->
+<section class="lp-section lp-section-light" id="gallery">
+  <div class="lp-section-inner">
+    <div class="lp-section-title">
+      <div class="eyebrow"><span></span>Recent Work<span></span></div>
+      <h2>Real Roofs. <em>Real Homes.</em></h2>
+      <p>Click any photo to view it full-size. Every roof shown is a real Spartan Roofing install in Central New Jersey.</p>
+    </div>
+
+    <div class="lp-gallery" data-gallery>
+      <button type="button" class="lp-gallery-item" data-src="images/photo-25.jpg" data-caption="Full architectural shingle replacement · drone view">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-25.jpg')"></div>
+        <span class="lp-gallery-zoom" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        </span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-20.jpg" data-caption="Finished install · aerial view">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-20.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-22.jpg" data-caption="Mid-replacement · crew on roof">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-22.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-26.jpg" data-caption="New architectural shingles · curb view">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-26.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-30.jpg" data-caption="Mid-tear-off · decking exposed">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-30.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-06.jpg" data-caption="Ridge cap perspective · finished install">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-06.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-10.jpg" data-caption="Job site · Spartan yard sign">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-10.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-15.jpg" data-caption="Flat roof system · fastener install">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-15.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-18.jpg" data-caption="Before / after · full replacement">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-18.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-01.jpg" data-caption="Soffit / fascia work in progress">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-01.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-52.jpg" data-caption="Recent project · spring 2026">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-52.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+
+      <button type="button" class="lp-gallery-item" data-src="images/photo-60.jpg" data-caption="Aerial drone shot · finished roof">
+        <div class="lp-gallery-img" style="background-image:url('images/photo-60.jpg')"></div>
+        <span class="lp-gallery-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ LIGHTBOX (hidden by default) -->
+<div class="lp-lightbox" id="lp-lightbox" role="dialog" aria-modal="true" aria-label="Project photo viewer">
+  <button class="lp-lightbox-close" aria-label="Close" data-lb-close>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <button class="lp-lightbox-prev" aria-label="Previous photo" data-lb-prev>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <img class="lp-lightbox-img" id="lp-lightbox-img" alt="" />
+  <button class="lp-lightbox-next" aria-label="Next photo" data-lb-next>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <div class="lp-lightbox-counter" id="lp-lightbox-counter">1 / 12</div>
+</div>
+
+<!-- ============================================================ FORM -->
+<section class="lp-form-section" id="book">
+  <div class="lp-section-inner">
+    <div class="lp-section-title">
+      <div class="eyebrow"><span></span>Book Yours<span></span></div>
+      <h2>Claim Your <em>Free Inspection.</em></h2>
+      <p>Takes 30 seconds. We'll call you back within 2 business hours.</p>
+      <div class="lp-risk-row">
+        <span>100% Free</span><span class="dot">·</span>
+        <span>No Obligation</span><span class="dot">·</span>
+        <span>No High-Pressure Sales</span><span class="dot">·</span>
+        <span>Same-Day Booking</span>
+      </div>
+    </div>
+
+    <div class="lp-form-card" data-lp-form-card>
+      <form data-lp-form action="https://formsubmit.co/dev@seaagency.co" method="POST">
+        <input type="hidden" name="_subject" value="New Spartan Roofing — Free 12-Point Inspection Request" />
+        <input type="hidden" name="_cc" value="info@spartanroofingnj.com" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="Source Page" value="Landing Page (12-Point Inspection)" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="form-row split">
+          <div>
+            <label>First Name</label>
+            <input type="text" name="First Name" required />
+          </div>
+          <div>
+            <label>Last Name</label>
+            <input type="text" name="Last Name" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Phone</label>
+          <input type="tel" name="Phone" required />
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="email" name="Email" required />
+        </div>
+        <div class="form-row">
+          <label>Property Address</label>
+          <input type="text" name="Address" required />
+        </div>
+
+        <button type="submit" class="lp-submit">Yes, Book My Free Inspection</button>
+
+        <p class="lp-form-disclaimer">No spam. No high-pressure follow-ups. Just a real person calling back.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ REVIEWS -->
+<section class="lp-section lp-section-light">
+  <div class="lp-section-inner">
+    <div class="lp-section-title">
+      <div class="eyebrow"><span></span>What Homeowners Say<span></span></div>
+      <h2>Real People. <em>Real Roofs. Real Reviews.</em></h2>
+    </div>
+
+    <div class="lp-reviews-grid">
+      <div class="lp-review-card">
+        <div class="lp-review-stars">★★★★★</div>
+        <p class="lp-review-quote">"Leo and his team just finished up the new roof on our home and it looks GREAT! Every interaction was timely, satisfactory and reasonable. In a world where no one returns your emails or phone calls, it is a pleasure to work with a company that values customer service."</p>
+        <div class="lp-review-author"><strong>Gregory Corsan</strong> · Local Guide · 31 reviews</div>
+      </div>
+      <div class="lp-review-card">
+        <div class="lp-review-stars">★★★★★</div>
+        <p class="lp-review-quote">"I went with Spartan because I did not have to ask Leo about replacing the decking. He recommended it. That is the sign of a true roofer. Other roofers might have charged me to put another roof on outdated decking. Not Leo. The estimate was extremely reasonable."</p>
+        <div class="lp-review-author"><strong>Anne McNutt</strong> · 4 reviews · 15 photos</div>
+      </div>
+      <div class="lp-review-card">
+        <div class="lp-review-stars">★★★★★</div>
+        <p class="lp-review-quote">"Messaged them last week and Leo came out the same day to check out the work I needed done. Gave me a quote within a couple of hours and an awesome price! Leo is super professional and very knowledgeable of the work he does."</p>
+        <div class="lp-review-author"><strong>Michael Bras</strong> · 4 reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FINAL CTA -->
+<section class="lp-final">
+  <div class="lp-final-inner">
+    <h2>Don't Wait Until It <em>Leaks.</em></h2>
+    <p>The best time to know what's going on with your roof is before water does.</p>
+    <div class="lp-final-buttons">
+      <a href="#book" class="lp-cta-primary">
+        Book My Free Inspection
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="tel:973-938-2776" class="lp-final-call">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (973) 938-2776
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER -->
+<footer class="lp-footer">
+  <div class="lp-footer-line">© <span data-current-year>2026</span> Spartan Roofing LLC · NJ License #13VH12613900 · Licensed &amp; Insured</div>
+  <div class="lp-footer-line">
+    <a href="index.html">Full Website</a> · <a href="tel:973-938-2776">973-938-2776</a> · <a href="https://www.instagram.com/spartan_roofing_nj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a>
+  </div>
+</footer>
+
+<!-- ============================================================ SCRIPT -->
+<script>
+  // Set current year
+  document.querySelectorAll('[data-current-year]').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+
+  // Smooth scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (id.length <= 1) return;
+      const target = document.querySelector(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ============== Gallery lightbox ==============
+  (function () {
+    const items = Array.from(document.querySelectorAll('[data-gallery] .lp-gallery-item'));
+    const box   = document.getElementById('lp-lightbox');
+    const img   = document.getElementById('lp-lightbox-img');
+    const count = document.getElementById('lp-lightbox-counter');
+    if (!items.length || !box || !img) return;
+
+    let idx = 0;
+
+    const open = (i) => {
+      idx = (i + items.length) % items.length;
+      const src = items[idx].dataset.src;
+      const cap = items[idx].dataset.caption || '';
+      img.src = src;
+      img.alt = cap;
+      if (count) count.textContent = (idx + 1) + ' / ' + items.length;
+      box.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+    const close = () => {
+      box.classList.remove('open');
+      document.body.style.overflow = '';
+      img.src = '';
+    };
+    const next = () => open(idx + 1);
+    const prev = () => open(idx - 1);
+
+    items.forEach((el, i) => el.addEventListener('click', () => open(i)));
+
+    box.querySelector('[data-lb-close]').addEventListener('click', close);
+    box.querySelector('[data-lb-next]').addEventListener('click', (e) => { e.stopPropagation(); next(); });
+    box.querySelector('[data-lb-prev]').addEventListener('click', (e) => { e.stopPropagation(); prev(); });
+
+    // click backdrop closes
+    box.addEventListener('click', (e) => { if (e.target === box) close(); });
+
+    // keyboard nav
+    document.addEventListener('keydown', (e) => {
+      if (!box.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowRight') next();
+      else if (e.key === 'ArrowLeft') prev();
+    });
+
+    // basic touch swipe
+    let touchX = null;
+    box.addEventListener('touchstart', (e) => { touchX = e.changedTouches[0].clientX; }, { passive: true });
+    box.addEventListener('touchend', (e) => {
+      if (touchX === null) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 50) (dx < 0 ? next() : prev());
+      touchX = null;
+    }, { passive: true });
+  })();
+
+  // Form: AJAX submit to FormSubmit, show success in place
+  const form = document.querySelector('[data-lp-form]');
+  const card = document.querySelector('[data-lp-form-card]');
+  if (form && card) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('.lp-submit');
+      const original = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      const fd = new FormData(form);
+      const payload = {};
+      fd.forEach((v, k) => { payload[k] = v; });
+
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/dev@seaagency.co', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('submit failed');
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = original;
+        alert('Submission failed. Please call us at 973-938-2776 or email info@spartanroofingnj.com.');
+        return;
+      }
+
+      card.innerHTML =
+        '<div class="lp-form-success">' +
+          '<svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>' +
+          '<h3>Got it. We\'ll be in touch.</h3>' +
+          '<p>Expect a call within 2 business hours during business hours, or first thing in the morning.</p>' +
+        '</div>';
+    });
+  }
+</script>
+
+</body>
+</html>
