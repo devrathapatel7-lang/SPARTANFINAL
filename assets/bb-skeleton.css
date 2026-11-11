@@ -1011,3 +1011,26 @@ dialog.est-pop{position:fixed;inset:0;margin:auto;height:fit-content}
 .xp-block h3, .xp-policy h3, [id^="faq-"] h3 { margin-bottom: 12px; }
 @media (max-width: 860px) { .hero-chips { gap: 12px; } }
 .site-footer .f-cta .btn { color: #fff; }
+/* ============================================================
+   45-xp-cards.css (lane copy rhythm, 2026-11-11)
+   Row 316: overflow paragraphs 4+ in the explainer and
+   town-knowledge bands sit in a card grid (tooling/lanes/
+   xp_cards.py). Two columns where the text column is wide
+   enough, one column under 768px. No text changes.
+   ============================================================ */
+.xp-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-4, 16px);
+  margin: var(--space-2, 8px) 0 1em;
+}
+.xp-card {
+  background: #fff;
+  border: 1px solid var(--hairline-light, rgba(27,30,35,.12));
+  border-radius: var(--radius, 14px);
+  padding: var(--space-4, 16px) 18px;
+}
+.xp-card p { margin: 0; }
+@media (max-width: 767px) {
+  .xp-cards { grid-template-columns: 1fr; gap: var(--space-3, 12px); }
+}
