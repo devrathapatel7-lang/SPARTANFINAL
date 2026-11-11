@@ -1010,3 +1010,4 @@ dialog.est-pop{position:fixed;inset:0;margin:auto;height:fit-content}
 /* Live-site diagnostics 2026-11-11: small spacing fixes */
 .xp-block h3, .xp-policy h3, [id^="faq-"] h3 { margin-bottom: 12px; }
 @media (max-width: 860px) { .hero-chips { gap: 12px; } }
+.site-footer .f-cta .btn { color: #fff; }
