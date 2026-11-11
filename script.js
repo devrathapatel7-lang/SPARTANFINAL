@@ -180,6 +180,30 @@ const TESTIMONIALS = [
       payload._cc = 'info@spartanroofingnj.com';
       payload._cc = 'info@spartanroofingnj.com';
 
+      // Spartan CRM dual-delivery: mirror every lead into the CRM console in
+      // parallel with the email. Fail-silent and non-blocking, so it can never
+      // slow down or break the FormSubmit path below.
+      try {
+        const svc = (payload['Service Needed'] || '').toString().trim();
+        const msg = (payload['Message'] || '').toString().trim();
+        let want = svc;
+        if (msg) want = want ? (want + '. ' + msg) : msg;
+        fetch('https://spartan-crm-beta.vercel.app/api/lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          keepalive: true,
+          body: JSON.stringify({
+            'First Name': payload['First Name'] || '',
+            'Last Name': payload['Last Name'] || '',
+            'Phone': payload['Phone'] || '',
+            'Property Address': payload['Address'] || '',
+            'What They Want Done': want,
+            'Source Page': 'Spartan Roofing Main Site Contact Form',
+            '_honey': payload['_honey'] || ''
+          })
+        }).catch(function () {});
+      } catch (e) {}
+
       try {
         const res = await fetch('https://formsubmit.co/ajax/dev@seaagency.co', {
           method: 'POST',
