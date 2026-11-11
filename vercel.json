@@ -1,0 +1,60 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/roof-replacement.html",
+      "destination": "/roof-replacement/",
+      "permanent": true
+    },
+    {
+      "source": "/services/roof-repair.html",
+      "destination": "/roof-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/services/storm-damage.html",
+      "destination": "/storm-damage-roof-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/services/gutters.html",
+      "destination": "/gutter-installation/",
+      "permanent": true
+    },
+    {
+      "source": "/services/siding.html",
+      "destination": "/siding-installation/",
+      "permanent": true
+    },
+    {
+      "source": "/services/chimney.html",
+      "destination": "/chimney-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/services/gaf-certified.html",
+      "destination": "/gaf-certified-roofer/",
+      "permanent": true
+    },
+    {
+      "source": "/services/owens-corning.html",
+      "destination": "/owens-corning-preferred-contractor/",
+      "permanent": true
+    },
+    {
+      "source": "/legal/privacy.html",
+      "destination": "/privacy-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/images/logo.png",
+      "destination": "/assets/img/spartan-logo.png",
+      "permanent": true
+    }
+  ]
+}
