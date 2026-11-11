@@ -914,7 +914,7 @@ dialog.est-pop{position:fixed;inset:0;margin:auto;height:fit-content}
   .form-card .form-rating { margin: 4px 0 8px; }
   .form-card .form-review { margin: 0 0 10px; padding: 7px 10px; }
   .form-card .form-review blockquote { font-size: .86rem; line-height: 1.35; }
-  .form-card .form-review figcaption { margin-top: 2px; font-size: .78rem; }
+  .form-card .form-review figcaption { margin-top: 2px; font-size: 13px; }
   .form-card form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; }
   .form-card form > * { grid-column: 1 / -1; }
   .form-card form > label:has(input[name="name"]),
@@ -1006,3 +1006,7 @@ dialog.est-pop{position:fixed;inset:0;margin:auto;height:fit-content}
   .bb-chips { grid-template-columns: 1fr; }
   .bb-chips .bb-chip:last-child:nth-child(odd) { width: 100%; }
 }
+
+/* Live-site diagnostics 2026-11-11: small spacing fixes */
+.xp-block h3, .xp-policy h3, [id^="faq-"] h3 { margin-bottom: 12px; }
+@media (max-width: 860px) { .hero-chips { gap: 12px; } }
