@@ -55,6 +55,21 @@
       "source": "/images/logo.png",
       "destination": "/assets/img/spartan-logo.png",
       "permanent": true
+    },
+    {
+      "source": "/burlington-county/roof-replacement-services/",
+      "destination": "/roof-replacement/",
+      "permanent": true
+    },
+    {
+      "source": "/morris-county/commercial-roofing-contractors/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/union-county/gutter-repair/",
+      "destination": "/gutter-installation/",
+      "permanent": true
     }
   ],
   "headers": [
