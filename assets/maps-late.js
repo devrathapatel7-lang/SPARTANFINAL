@@ -11,6 +11,7 @@
       es.forEach(function (e) { if (e.isIntersecting) { load(e.target); io.unobserve(e.target); } });
     }, { rootMargin: '800px 0px' });
     fs.forEach(function (f) { io.observe(f); });
+    setTimeout(function () { fs.forEach(load); }, 5000);  // any map scrolled past too fast still loads
   }
   function arm() { ev.forEach(function (t) { addEventListener(t, go, { capture: true, passive: true }); }); setTimeout(go, 8000); }
   if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
