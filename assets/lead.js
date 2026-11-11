@@ -2,6 +2,7 @@
 document.addEventListener('submit', function (e) {
   var f = e.target;
   if (!f || !f.action || f.action.indexOf('formsubmit.co') < 0) return;
+  try { if (window.gtag) gtag('event', 'generate_lead', { form_page: location.pathname, transport_type: 'beacon' }); } catch (err) {}
   try {
     var d = new FormData(f), name = String(d.get('name') || '').trim(), i = name.indexOf(' ');
     fetch('https://spartan-crm-beta.vercel.app/api/lead', {
