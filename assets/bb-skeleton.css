@@ -994,6 +994,9 @@ dialog.est-pop{position:fixed;inset:0;margin: auto;height:fit-content}
 .xp-block h3, .xp-policy h3, [id^="faq-"] h3 { margin-bottom: var(--space-3); }
 @media (max-width: 860px) { .hero-chips { gap: 12px; } }
 .site-footer .f-cta .btn { color: var(--c-fff); }
+
+/* Jeff 2026-11-12: email field dropped, so the address box takes the full row in the two-up form grid */
+form label:has(> input[name="address"]) { grid-column: 1 / -1; }
 /* ============================================================
    45-xp-cards.css (lane copy rhythm, 2026-11-11)
    Row 316: overflow paragraphs 4+ in the explainer and
