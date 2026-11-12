@@ -1181,3 +1181,6 @@ main .xp-block .bb-more-about { text-align: left; }
 main .xp-block .card-grid + p { margin-top: var(--space-5); }
 /* Sprint 3 (2026-11-12) row 259: area map caption under the service-page area map */
 .bb-areas-map .map-cap{margin: var(--len-6px) 0 0;font-size:14px;line-height:1.4;opacity:.85}
+
+/* Row 84 (2026-11-12): in-page jumps to the quote form clear the sticky header */
+#estimate{scroll-margin-top:96px}
