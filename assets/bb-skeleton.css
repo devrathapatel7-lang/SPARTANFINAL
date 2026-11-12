@@ -1141,7 +1141,7 @@ main p.p-long { text-align: left !important; }
 .job-town .ic { width: 16px; height: 16px; }
 .job-pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
 .job-pair figure { margin: 0; }
-.job-pair figcaption { margin-top: var(--space-1); font-size: .85rem; font-weight: 700; color: var(--muted); }
+.job-pair figcaption { margin-top: var(--space-1); font-size: .85rem; font-weight: 700; color: var(--c-4b5563); } /* fix5: #6b7280 on #f5f1ea was 4.29:1 */
 
 /* row 308: re-proof on the thank-you page */
 .ty-proof { margin: var(--space-6) auto 0; text-align: center; }
