@@ -1168,3 +1168,14 @@ main p.p-long { text-align: left !important; }
 @media (max-width: 860px) { .team-row { grid-template-columns: minmax(0, 1fr); } .team-photo img { height: auto; } }
 .job-grid.job-grid-photo:has(> .job-card:nth-child(2):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 960px; margin-inline: auto; }
 @media (max-width: 860px) { .job-grid.job-grid-photo:has(> .job-card:nth-child(2):last-child) { grid-template-columns: minmax(0, 1fr); } }
+/* 2026-11-12 content2 (cost / GAF / OC pages): the cards built by extra_pages.py cards() have no image, and the
+   centered-band rule `main .bb-center-head p {margin: auto}` was zeroing their side margins, so the text sat on
+   the card edge. Restore the card's own 22px inset and give the heading room at the top. Depth blocks
+   ("More about ...") read left-aligned like they do on the service pages. */
+main .xp-block .card-grid .svc-card { padding-top: var(--pad-18px); }
+main .xp-block .card-grid .svc-card p { margin-left: var(--len-22px, var(--len-22px)); margin-right: var(--len-22px, var(--len-22px)); }
+main .xp-block .bb-more-about { text-align: left; }
+/* four cards (OC warranty levels) sit 2 x 2 instead of 3 + 1 orphan */
+@media (min-width: 768px) { main .xp-block .card-grid.cols-3:has(> :nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* a paragraph right after a card grid gets air above it */
+main .xp-block .card-grid + p { margin-top: var(--space-5); }
