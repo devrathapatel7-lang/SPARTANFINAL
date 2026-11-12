@@ -998,6 +998,9 @@ dialog.est-pop{position:fixed;inset:0;margin: auto;height:fit-content}
 
 /* PSI 2026-11-12: reviewer name + job line on the beige review cards were 4.29:1; darker grey passes 4.5:1 */
 .review-card figcaption .muted, .review-card figcaption .rev-job { color: var(--c-4b5563); }
+
+/* PSI 2026-11-12: brand red #e40101 kickers on cream were 4.33:1; the darker brand red (--orange-2) passes 4.5:1 on light bands. Dark bands keep --sky. */
+html:root { --accent-text: #c60000; }
 /* ============================================================
    45-xp-cards.css (lane copy rhythm, 2026-11-11)
    Row 316: overflow paragraphs 4+ in the explainer and
