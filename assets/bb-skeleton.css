@@ -902,8 +902,7 @@ dialog.est-pop{position:fixed;inset:0;margin: auto;height:fit-content}
   .form-card form > * { grid-column: 1 / -1; }
   .form-card form > label:has(input[name="name"]),
   .form-card form > label:has(input[name="phone"]),
-  .form-card form > label:has(input[name="email"]),
-  .form-card form > label:has(input[name="address"]) { grid-column: auto; }
+  .form-card form > label:has(input[name="email"]) { grid-column: auto; }
   .form-card form label { margin-bottom: 0; }
   .form-card input { padding: var(--pad-9px) var(--space-3); }
   .form-card textarea { padding: var(--pad-9px) var(--space-3); height: 44px; min-height: 44px; resize: vertical; }
@@ -995,8 +994,7 @@ dialog.est-pop{position:fixed;inset:0;margin: auto;height:fit-content}
 @media (max-width: 860px) { .hero-chips { gap: 12px; } }
 .site-footer .f-cta .btn { color: var(--c-fff); }
 
-/* Jeff 2026-11-12: email field dropped, so the address box takes the full row in the two-up form grid */
-form label:has(> input[name="address"]) { grid-column: 1 / -1; }
+/* Jeff 2026-11-12: email field dropped, so the address box takes the full row (it left the two-up list above) */
 /* ============================================================
    45-xp-cards.css (lane copy rhythm, 2026-11-11)
    Row 316: overflow paragraphs 4+ in the explainer and
