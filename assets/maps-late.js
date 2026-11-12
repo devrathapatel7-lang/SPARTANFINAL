@@ -16,3 +16,23 @@
   function arm() { ev.forEach(function (t) { addEventListener(t, go, { capture: true, passive: true }); }); setTimeout(go, 8000); }
   if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
 })();
+/* Row 505 (2026-11-12): Google fills the listing card (name, address, rating, review count) in a cid= embed only when
+   the frame is 420px or wider; narrower frames show a bare pin. Below 420px the listing frame is drawn 420px wide and
+   scaled down to fit its box, so phones see the full card. Geographic q= maps are left alone. */
+(function () {
+  function fit() {
+    [].forEach.call(document.querySelectorAll('.map-embed iframe'), function (f) {
+      var u = f.getAttribute('src') || f.getAttribute('data-src') || '';
+      if (u.indexOf('cid=') < 0) return;
+      var w = f.parentNode;
+      f.style.cssText = ''; w.style.height = ''; w.style.position = '';
+      var cw = w.clientWidth;
+      if (!cw || cw >= 420) return;
+      var h = f.offsetHeight, k = cw / 420;
+      w.style.position = 'relative'; w.style.height = h + 'px';
+      f.style.cssText = 'position:absolute;left:0;top:0;width:420px;max-width:none;min-height:0;height:' + Math.round(h / k) + 'px;transform:scale(' + k.toFixed(4) + ');transform-origin:0 0';
+    });
+  }
+  addEventListener('resize', fit);
+  if (document.readyState === 'loading') addEventListener('DOMContentLoaded', fit); else fit();
+})();

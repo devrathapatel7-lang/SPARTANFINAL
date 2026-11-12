@@ -1179,3 +1179,5 @@ main .xp-block .bb-more-about { text-align: left; }
 @media (min-width: 768px) { main .xp-block .card-grid.cols-3:has(> :nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 /* a paragraph right after a card grid gets air above it */
 main .xp-block .card-grid + p { margin-top: var(--space-5); }
+/* Sprint 3 (2026-11-12) row 259: area map caption under the service-page area map */
+.bb-areas-map .map-cap{margin: var(--len-6px) 0 0;font-size:14px;line-height:1.4;opacity:.85}
